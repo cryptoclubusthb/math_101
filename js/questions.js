@@ -8,7 +8,8 @@ let questions = [
       "11",
       "12",
       "13"
-    ]
+    ],
+    category: "Algebra"
   },
   {
     numb: 2,
@@ -19,7 +20,8 @@ let questions = [
       "x = 3",
       "x = 4",
       "x = 5"
-    ]
+    ],
+    category: "Algebra"
   },
   {
     numb: 3,
@@ -30,7 +32,8 @@ let questions = [
       "30 square units",
       "35 square units",
       "40 square units"
-    ]
+    ],
+    category: "Analysis"
   },
   {
     numb: 4,
@@ -41,7 +44,8 @@ let questions = [
       "Isosceles triangle",
       "Scalene triangle",
       "Right triangle"
-    ]
+    ],
+    category: "Analysis"
   },
   {
     numb: 5,
@@ -52,6 +56,7 @@ let questions = [
       "8",
       "9",
       "10"
-    ]
+    ],
+    category: "Algebra"
   }
 ];

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math_101</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="src/logo.png">
+    <meta property="og:title" content="ceaser_encryption">
+    <meta property="og:description" content="Welcome to math_101, a quiz on various mathematical topics. Test your knowledge in algebra, calculus, and probability. Solve equations, evaluate integrals, and calculate probabilities. Challenge yourself and see how well you perform in Math_101.">
+    <meta property="og:image" content="https://github.com/cryptoclubusthb/ceaser_encryption/blob/main/src/baner.jpg?raw=true">
+    <meta property="og:url" content=https://cryptoclubusthb.github.io/math_101/">
+    <link rel="canonical" href="https://cryptoclubusthb.github.io/math_101/">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Math_101</h1>
+        <form id="quiz-form">
+          <div class="question">
+            <p>1. Résolvez l'équation cubique suivante : \(x^3 - 3x^2 + 2x - 1 = 0\) </p>
+            <label>
+              <input type="radio" name="q1-algebre" value="0"> \(x = 1, x = 1, x = 1\)
+            </label>
+            <label>
+              <input type="radio" name="q1-algebre" value="10"> \(x = 1, x = 2, x = -1\)
+            </label>
+            <label>
+              <input type="radio" name="q1-algebre" value="0"> \(x = 0, x = 1, x = -1\)
+            </label>
+          </div>
+          <div class="question">
+            <p>2. Évaluez l'intégrale suivante : \(\int \frac{x^2 + 2x + 3}{x^2 - x + 2} \, dx\) </p>
+            <label>
+              <input type="radio" name="q2-analyse" value="0"> \(x + \frac{3}{x - 2} + C\)
+            </label>
+            <label>
+              <input type="radio" name="q2-analyse" value="10"> \(x + \ln(x^2 - x + 2) + C\)
+            </label>
+            <label>
+              <input type="radio" name="q2-analyse" value="0"> \(\ln(x^2 - x + 2) + C\)
+            </label>
+          </div>
+          <div class="question">
+            <p>3. Une urne contient 8 boules rouges, 6 boules bleues et 4 boules vertes. Si l'on tire deux boules successivement sans remise, quelle est la probabilité de tirer une boule rouge puis une boule bleue ? (Probabilité)</p>
+            <label>
+              <input type="radio" name="q3-probabilite" value="0"> \(\frac{8}{18} \times \frac{6}{17}\)
+            </label>
+            <label>
+              <input type="radio" name="q3-probabilite" value="10"> \(\frac{8}{18} \times \frac{6}{17}\)
+            </label>
+            <label>
+              <input type="radio" name="q3-probabilite" value="0"> \(\frac{8}{18} \times \frac{6}{18}\)
+            </label>
+          </div>
+          <button type="button" onclick="calculateFinalScore()">Soumettre Tout</button>
+        </form>
+        <div id="result-final"></div>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
+            
+          
+            
+          
+          
+            
+          

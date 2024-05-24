@@ -1,5 +1,6 @@
+<!-- Created By CodingNepal - www.codingnepalweb.com  -->
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,58 +14,78 @@
     <link rel="canonical" href="https://cryptoclubusthb.github.io/math_101/">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-    <div class="quiz-container">
-        <h1>Math_101</h1>
-        <form id="quiz-form">
-          <div class="question">
-            <p>1. Résolvez l'équation cubique suivante : \(x^3 - 3x^2 + 2x - 1 = 0\) </p>
-            <label>
-              <input type="radio" name="q1-algebre" value="0"> \(x = 1, x = 1, x = 1\)
-            </label>
-            <label>
-              <input type="radio" name="q1-algebre" value="10"> \(x = 1, x = 2, x = -1\)
-            </label>
-            <label>
-              <input type="radio" name="q1-algebre" value="0"> \(x = 0, x = 1, x = -1\)
-            </label>
-          </div>
-          <div class="question">
-            <p>2. Évaluez l'intégrale suivante : \(\int \frac{x^2 + 2x + 3}{x^2 - x + 2} \, dx\) </p>
-            <label>
-              <input type="radio" name="q2-analyse" value="0"> \(x + \frac{3}{x - 2} + C\)
-            </label>
-            <label>
-              <input type="radio" name="q2-analyse" value="10"> \(x + \ln(x^2 - x + 2) + C\)
-            </label>
-            <label>
-              <input type="radio" name="q2-analyse" value="0"> \(\ln(x^2 - x + 2) + C\)
-            </label>
-          </div>
-          <div class="question">
-            <p>3. Une urne contient 8 boules rouges, 6 boules bleues et 4 boules vertes. Si l'on tire deux boules successivement sans remise, quelle est la probabilité de tirer une boule rouge puis une boule bleue ? (Probabilité)</p>
-            <label>
-              <input type="radio" name="q3-probabilite" value="0"> \(\frac{8}{18} \times \frac{6}{17}\)
-            </label>
-            <label>
-              <input type="radio" name="q3-probabilite" value="10"> \(\frac{8}{18} \times \frac{6}{17}\)
-            </label>
-            <label>
-              <input type="radio" name="q3-probabilite" value="0"> \(\frac{8}{18} \times \frac{6}{18}\)
-            </label>
-          </div>
-          <button type="button" onclick="calculateFinalScore()">Soumettre Tout</button>
-        </form>
-        <div id="result-final"></div>
-      </div>
-    <script src="script.js"></script>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Math_101 Quiz </button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules </span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit </button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">cryptoclub Math_101 Quiz</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
 </body>
 </html>
-            
-          
-            
-          
-          
-            
-          

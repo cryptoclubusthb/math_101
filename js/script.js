@@ -24,11 +24,11 @@ continue_btn.onclick = () => {
     quiz_box.classList.add("activeQuiz"); // Show quiz box
     showQuetions(0); // Calling showQestions function
     queCounter(1); // Passing 1 parameter to queCounter
-    startTimer(15); // Calling startTimer function
+    startTimer(90); // Calling startTimer function
     startTimerLine(0); // Calling startTimerLine function
 }
 
-let timeValue = 15;
+let timeValue = 90;
 let que_count = 0;
 let que_numb = 1;
 let userScore = 0;
@@ -49,7 +49,7 @@ const quit_quiz = result_box.querySelector(".buttons .quit");
 restart_quiz.onclick = () => {
     quiz_box.classList.add("activeQuiz"); // Show quiz box
     result_box.classList.remove("activeResult"); // Hide result box
-    timeValue = 15;
+    timeValue = 90;
     que_count = 0;
     que_numb = 1;
     userScore = 0;
@@ -170,11 +170,8 @@ function showResult() {
     const scoreText = result_box.querySelector(".score_text");
 
     // Display the category-specific scores
-    let scoreTag = `<span>Scores:</span>
-                    <p>Algebra: ${algebraScore}</p>
-                    <p>Analysis: ${analysisScore}</p>
-                    <p>Optimization: ${optimizationScore}</p>
-                    <p>Probability & Statistics: ${probaStatScore}</p>`;
+    let scoreTag = `<span>Score</span>
+                    <p> ${algebraScore} / 5 </p>`;
     scoreText.innerHTML = scoreTag; // Adding new span tag inside score_Text
 }
 
@@ -208,7 +205,7 @@ function startTimer(time) {
 }
 
 function startTimerLine(time) {
-    counterLine = setInterval(timer, 29);
+    counterLine = setInterval(timer, 233);
     function timer() {
         time += 1; // Upgrading time value with 1
         time_line.style.width = time + "px"; // Increasing width of time_line with px by time value
